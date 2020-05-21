@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+
+.wrapper {
+  position: relative;
+  background: #F5F5F5;
+  width: 960px;
+  height: 645px;
+  display: flex;
+  border-radius: 10px;
+}
+
+.wrapper .wrapper_left {
+  overflow: overlay;
+  width: 262px;
+  margin: 0 30px;
+  display: flex;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+  background-color: #F5F5F5;
+  margin-top: 30px;
+}
+
+.wrapper .wrapper_left ul li {
+  margin-bottom: 23px;
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+  width: 260px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.wrapper .wrapper_left ul li:first-child {
+  margin-bottom: 23px;
+  margin-top: 18px;
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+  width: 260px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.wrapper .wrapper_left ul li:last-child {
+  margin-bottom: 20px;
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+  width: 260px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.wrapper .wrapper_left ul li p {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.wrapper .wrapper_left ul li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: all 0.4s ease;
+  color: #323232;
+  font-weight: 500;
+}
+
+.wrapper .wrapper_left ul li.active {
+  border: none
+}
+
+.wrapper .wrapper_left ul li.active p {
+  color: #3C78FF;
+}
+.wrapper .wrapper_left ul li.active:before {
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.wrapper .wrapper_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.wrapper .wrapper_right {
+  width: 650px;
+  background-color: #fff;
+  margin-left: -12px;
+  border-radius: 0 0 10px 0;
+  height: 655px;
+}
+
+.wrapper .wrapper_right .title {
+  font-size: 16px;
+  text-align: left;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 61px;
+  margin-left: 15px;
+}
+
+.wrapper .wrapper_right .item .item_info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.wrapper .wrapper_right .item .item_info .img {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.wrapper .wrapper_right .item .item_info .img:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("https://i.imgur.com/HwNnoFN.png") no-repeat 0 0;
+  width: 94px;
+  height: 101px;
+}
+
+.wrapper .wrapper_right .item.openpeeps .item_info .img:before {
+  background-position: 0 0;
+  width: 94px;
+  height: 101px;
+}
+.wrapper .wrapper_right .item.geeme .item_info .img:before {
+  background-position: 0 -110px;
+  width: 89px;
+  height: 101px;
+}
+.wrapper .wrapper_right .item.reactjs .item_info .img:before {
+  background-position: 0 -220px;
+  width: 100px;
+  height: 100px;
+}
+.wrapper .wrapper_right .item.vuejs .item_info .img:before {
+  background-position: 0 -330px;
+  width: 100px;
+  height: 101px;
+}
+
+.wrapper .wrapper_right .item .item_info p {
+  background: #fff;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #abaacd;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.wrapper .wrapper_right .item.openpeeps .item_info p {
+  color: #dd0330;
+}
+.wrapper .wrapper_right .item.geeme .item_info p {
+  color: #8bc500;
+}
+.wrapper .wrapper_right .item.reactjs .item_info p {
+  color: #61dafb;
+}
+.wrapper .wrapper_right .item.vuejs .item_info p {
+  color: #41b783;
+}
+
+.wrapper .wrapper_right .item p {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.sel {
+  display: flex;
+  background: #fff;
+  cursor: pointer;
+  border: #F0F0F0 1px solid;
+  border-radius: 10px;
+  height: 60px;
+  width: 260px;
+  margin-bottom: 15px;
+}
+
+.wrapper .wrapper_left ul .sel.active {
+  border: #DCDCDC 1px solid;
+  background-color: #FAFAFA;
+}
